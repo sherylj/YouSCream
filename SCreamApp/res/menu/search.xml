@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.SearchView"
+        android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+    	android:voiceLanguageModel="free_form" />
+    <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    <!-- <item android:id="@+id/submenu"
+          android:title="Rent"
+          android:showAsAction="ifRoom|withText" >
+        <menu>
+            <item android:id="@+id/submenu_item1"
+                  android:title="Min Rent" />
+            <item android:id="@+id/submenu_item2"
+                  android:title="Max Rent" />
+        </menu>
+    </item>
+    <item android:id="@+id/submenu2"
+          android:title="Size"
+          android:showAsAction="ifRoom|withText">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/submenu_itemStudio"
+                    android:checkable="true"
+                    android:title="Studio"/>
+
+                <item
+                    android:id="@+id/submenu_item1Bdr"
+                    android:checkable="true"
+                    android:title="1 Bdr"/>
+
+                <item
+                    android:id="@+id/submenu_item2Bdr"
+                    android:checkable="true"
+                    android:title="2 Bdr"/>
+
+                
+
+            </group>
+            
+        </menu>
+    </item> -->
+</menu>

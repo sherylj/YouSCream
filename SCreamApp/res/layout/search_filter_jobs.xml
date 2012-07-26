@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/paneljobs"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/jobTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="Job title"
+            android:textColor="#FFF"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/jobField"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/jobTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:hint="Software Engineer? Financial Analyst?"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/locationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobField"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="Location"
+            android:textColor="#FFF"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/locationField"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/locationTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:hint="Los Angeles? San Francisco? Timbuktu?"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000" />
+        
+        
+        <Button
+            android:id="@+id/find"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/locationField"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/hunt"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="Hunt!"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/handleout"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_alignRight="@+id/panel"
+        android:background="@drawable/handleout" />
+    <Button
+        android:id="@+id/handlein"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_alignRight="@+id/panel"
+        android:background="@drawable/handlein"
+        android:visibility="gone" />
+</RelativeLayout>

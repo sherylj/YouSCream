@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/widget32"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+<TextView android:text="This is where we would load the apartments present in and around USC." 
+android:id="@+id/TextView01" 
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"></TextView>
+<Button android:text="Back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/button3" android:layout_below="@+id/TextView01" android:layout_alignParentLeft="true" android:layout_marginLeft="54dp" android:layout_marginTop="28dp"></Button>
+</RelativeLayout>

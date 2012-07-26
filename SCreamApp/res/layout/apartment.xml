@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <!-- <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:visibility="gone"/> -->
+   <!-- <ExpandableListView
+        android:id="@+id/apartmentExpandView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+    </ExpandableListView> -->
+    <!-- <fragment android:name="edu.usc.searchFilter.SearchFilterActivity"
+            android:id="@+id/list"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" /> -->
+	<!-- Search Filter -->
+
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+
+	    <RelativeLayout
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/panel"
+	        android:layout_width="500dp"
+	        android:layout_height="650dp"
+	        android:layout_marginTop="50dp"
+	        android:background="@drawable/panel"
+	        android:visibility="gone" >
+	        
+	       
+
+	        <TextView
+	            android:id="@+id/locationTitle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginTop="25dp"
+	            android:text="Location Information"
+	            android:textColor="#FFF"
+	            android:textSize="25dp" />
+	        
+	         <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/currentLocRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use Current Location" />
+
+            <RadioButton
+                android:id="@+id/searchLocRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Location" />
+        </RadioGroup>
+
+	        <EditText
+	            android:id="@+id/locationField"
+	            android:layout_width="400dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/radioGroup2"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginTop="25dp"
+	            android:background="@android:drawable/editbox_background"
+	            android:singleLine="true"
+	            android:textColor="#000" />
+
+	        <TextView
+	            android:id="@+id/Rent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/locationField"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginTop="25dp"
+	            android:text="Min Rent"
+	            android:textColor="#FFF"
+	            android:textSize="25dp" />
+	        
+	       	<SeekBar
+	            android:id="@+id/min_bar"
+	            android:layout_width="350dp"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/Rent"
+	            android:paddingTop="5dp"
+	            android:layout_weight="1"
+	            android:max="100"
+	            android:paddingLeft="25dp"
+	            android:paddingRight="15dp" />
+	       	
+	       	<EditText
+	            android:id="@+id/min_text"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:gravity="center_vertical|right"
+	            android:inputType="number"
+	            android:lines="1"
+	            android:maxLength="4"
+	            android:text="395" 
+	            android:layout_below="@+id/Rent"
+	            android:layout_toRightOf="@+id/min_bar"/>
+	       	
+	       	<TextView
+	            android:id="@+id/MaxRent"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/min_bar"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginTop="25dp"
+	            android:text="Max Rent"
+	            android:textColor="#FFF"
+	            android:textSize="25dp" />
+	       	
+	       	<SeekBar
+	            android:id="@+id/max_bar"
+	            android:layout_width="350dp"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/MaxRent"
+	            android:paddingTop="5dp"
+	            android:layout_weight="1"
+	            android:max="100"
+	            android:progress="100"
+	            android:paddingLeft="25dp"
+	            android:paddingRight="15dp" />
+	       	
+	       	<EditText
+	            android:id="@+id/max_text"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:gravity="center_vertical|right"
+	            android:inputType="number"
+	            android:lines="1"
+	            android:maxLength="4"
+	            android:text="1699" 
+	            android:layout_below="@+id/MaxRent"
+	            android:layout_toRightOf="@+id/max_bar"/>
+
+	        <RadioGroup
+	            android:id="@+id/radioGroup"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/max_bar"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginTop="25dp"
+	            android:orientation="vertical" >
+	            
+	            
+
+	            <RadioButton
+	                android:id="@+id/studio"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Studio" />
+
+	            <RadioButton
+	                android:id="@+id/onebhk"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="1 BHK" />
+
+	            <RadioButton
+	                android:id="@+id/twobhk"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="2 BHK" />
+	            
+	            <RadioButton
+	                android:id="@+id/displayall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Display All" />
+	        </RadioGroup>
+	        
+	             
+	        <Button
+	            android:id="@+id/find"
+	            android:layout_width="70dp"
+	            android:layout_height="30dp"
+	            android:layout_below="@+id/radioGroup"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="25dp"
+	            android:background="#f3d115"
+	            android:gravity="center_horizontal"
+	            android:paddingTop="5dp"
+	            android:text="Hunt!"
+	            android:textColor="#000" />
+	    </RelativeLayout>
+
+	    <Button
+	        android:id="@+id/handleout"
+	        android:layout_width="30dp"
+	        android:layout_height="100dp"
+	        android:layout_alignRight="@+id/panel"
+	        android:layout_alignTop="@+id/panel"
+	        android:layout_marginTop="50dp"
+	        android:background="@drawable/handleout" />
+
+	    <Button
+	        android:id="@+id/handlein"
+	        android:layout_width="30dp"
+	        android:layout_height="100dp"
+	        android:layout_alignRight="@+id/panel"
+	        android:layout_alignTop="@+id/panel"
+	        android:layout_marginTop="50dp"
+	        android:background="@drawable/handlein"
+	        android:visibility="gone" />
+	</RelativeLayout>
+
+	    <!-- End of Search Filter -->
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+        <com.google.android.maps.MapView
+		android:id="@+id/mapview" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:clickable="true"
+		android:apiKey="0ePab58oiRZy6vANgRebhhg4XwXy3nWu5CLCEJQ" />
+    </FrameLayout>
+
+</LinearLayout>

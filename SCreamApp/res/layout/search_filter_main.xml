@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/panel"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/panel"
+        android:visibility="gone" >
+        
+         
+
+        <TextView
+            android:id="@+id/locationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="Enter location"
+            android:textColor="#FFF"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/locationField"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/locationTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000"
+            android:hint="Search for Apartments around USC"/>
+        
+
+        <TextView
+            android:id="@+id/Rent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationField"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="Rent"
+            android:textColor="#FFF"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/studio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Studio" />
+
+            <RadioButton
+                android:id="@+id/onebhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 BHK" />
+
+            <RadioButton
+                android:id="@+id/twobhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 BHK" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="#f3d115"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="Hunt!"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/handleout"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignRight="@+id/panel"
+        android:layout_alignTop="@+id/panel"
+        android:background="@drawable/handleout" />
+    <Button
+        android:id="@+id/handlein"
+        android:layout_width="30dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignRight="@+id/panel"
+        android:layout_alignTop="@+id/panel"
+        android:background="@drawable/handlein"
+        android:visibility="gone" />
+</RelativeLayout>

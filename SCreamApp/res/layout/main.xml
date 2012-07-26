@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget32"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:gravity="fill" >
+
+    <ImageView
+        android:id="@+id/Credits"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="285dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/credits_button" />
+
+    <Button
+        android:id="@+id/Options"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignRight="@+id/Credits"
+        android:layout_below="@+id/Credits"
+        android:layout_marginRight="169dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/options_button" />
+
+    <Button
+        android:id="@+id/Help"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/Options"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginLeft="281dp"
+        android:background="@drawable/help_button" />
+
+    <Button
+        android:id="@+id/StartGame"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignBaseline="@+id/Help"
+        android:layout_alignBottom="@+id/Help"
+        android:layout_alignLeft="@+id/Credits"
+        android:background="@drawable/startgame_button" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Options"
+        android:layout_below="@+id/Options"
+        android:layout_marginLeft="40dp"
+        android:text="Housing"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/StartGame"
+        android:layout_below="@+id/StartGame"
+        android:layout_marginLeft="38dp"
+        android:text="  Events"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/Help"
+        android:layout_marginLeft="58dp"
+        android:text="  Jobs"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+</RelativeLayout>
